@@ -217,6 +217,116 @@ END ShakerSort
 
 \section{Программа решения на языке C++.}
 
+По полученным псевдокодам напишем программу на языке программирования C++. Программа будет содержать реализацию алгоритма сортировки пузырьком и шейкерной сортировки.
+
+\begin{lstlisting}[caption=Программа алгоритмов сортировки пузырьком и шейкерной сортировки.,style=listingStyle, language=C++]
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+const int numberOfValues = 10;
+const int divisionValue = 97;
+	
+void generateVector(vector<int>& values)
+{
+	int i;
+	
+	for (i = 0; i < numberOfValues; ++i)
+		values[i] = rand() % divisionValue;
+}
+
+void displayVector(vector<int> values)
+{
+	for (int value : values)
+		cout << value << " ";
+}
+
+void shakerSort(vector<int>& values)
+{
+	int left, right, i;
+	
+	left = 0; right = values.size() - 1;
+	
+	do
+	{
+		for (i = right; i > left; --i)
+		{
+			if (values[i] < values[i - 1])
+				swap(values[i], values[i - 1]);
+		}
+		left++:
+		
+		for (i = left; i < right; ++i)
+		{
+			if (values[i] > values[i + 1])
+				swap(values[i], values[i + 1]);
+		}
+		right--;
+	}
+	while (left <= right);
+}
+
+void bubbleSort(vector<int>& values)
+{
+	int i, j;
+	
+	for (i = 0; i < numberOfValues; ++i)
+		for (j = numberOfValues - 1; j > i; --j)
+			if (values[j - 1] > values[j])
+				swap(values[j - 1], values[j]);
+}
+
+int main() 
+{
+	srand(time(0));
+	
+	vector<int> values(numberOfValues, 0);
+	generateVector(values);
+	
+	cout << "Случайно сгенерированные числа:\n";
+	displayVector(values);
+	
+	cout << "\nОтсортированные элементы:\n";
+	bubbleSort(values);
+	displayVector(values);
+	
+	cout << "\n\nСлучайно сгенерированные числа:\n";
+	generateVector(values);
+	displayVector(values);
+	
+	cout << "\nОтсортированные элементы:\n";
+	shakerSort(values);
+	displayVector(values);
+}
+
+\end{lstlisting}
+
+\par Для хранения элементов, которые нужно отсортировать, будем пользоваться структурой "вектор". Для демонстрации работы алгоритма будем генерировать 
+вектор случайных значений, содержащий 10 чисел. Генерацию и вывод случайных значений будем осуществлять при помощи вспомогательных функций
+\textit{generateVector()} и \textit{displayVector()}. 
+\par Сначала протестируем алгоритм сортировки пузырьком, расположенный на 48 - 56 строках программы. Сгенерируем вектор случайных значений и попробуем 
+его отсортировать: 
+\begin{figure}[h]
+	\center{\includegraphics{bubbleSortTest}}
+	\caption*{\textit{Рис. 1} - Входные и выходные данные для алгоритма сортировки пузырьком.}
+\end{figure}
+
+\par Как видно, алгоритм справляется со своей задачей. Теперь рассмотрим шейкерную сортировку. Сгенерируем новый вектор из 10 случайных значений и 
+посмотрим на результат выполнения алгоритма. 
+\begin{figure}[h]
+	\center{\includegraphics{shakerSortTest}}
+	\caption*{\textit{Рис. 2} - Входные и выходные данные для алгоритма шейкерной сортировки.}
+\end{figure}
+\par Видно, что алгоритм справляется с поставленной задачей. Разберём его подробнее.
+Основная часть работы выполняется на строках 29 - 45. При входе в функцию инициализируются два значения - $ left $ и $ right $ - изначально они указывают 
+на начало и конец вектора соответственно. Далее, элементы начинают обрабатываться в цикле. В строках 31 - 35 выполняется сдвиг к началу вектора более 
+"легких" элементов - меньших по значению. В строках 38 - 42 осуществляется сдвиг к концу вектора более "тяжёлых" элементов, больших по значению. Как 
+видно, такие сдвиги 
+осуществляются поочерёдно - сначала продвигаются меньшие, а затем большие значения. После каждого такого цикла значение $ left $ увеличивается, а значение
+$ right $ уменьшается, что означает, что все элементы, стоящие до $ left $ и после $ right $, стоят на своих местах. Внешний цикл продолжается до тех пор, 
+пока значения $ left $ и $ right $ не совпадут. 
+
 \newpage
 
 \conclusion
