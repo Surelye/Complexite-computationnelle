@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: example-work.aux
+The style file: gost780uv.bst
+Illegal, another \bibstyle command---line 71 of file example-work.aux
+ : \bibstyle
+ :          {utf8gost780u}
+I'm skipping whatever remains of this command
+Database file #1: thesis.bib
+Warning--entry type for "Skvortsov_2008" isn't style-file defined
+--line 165 of file thesis.bib
+Warning--I didn't find a database entry for "Agaev_Vilenkin_Jafarli"
+Warning--I didn't find a database entry for "Danford_Schwarz"
+Warning--I didn't find a database entry for "InP"
+Warning--empty year in MSDN
+Warning--empty year in Wiki
+Warning--empty title in Segall_1968
+Warning--empty booktitle in Agranovich_1983
+Warning--empty journal in Perelman_2003_math:0307245
+Warning--empty journal in Nielsen_2010_1006.2735
+Name 1 in "{\relax О} Эстербю, and Златев, {\relax З}" has a comma at the end for entry matrix_87
+while executing---line 2795 of file gost780uv.bst
+Name 1 in "{\relax О} Эстербю, and Златев, {\relax З}" has a comma at the end for entry matrix_87
+while executing---line 2795 of file gost780uv.bst
+You've used 16 entries,
+            2649 wiz_defined-function locations,
+            761 strings with 8501 characters,
+and the built_in function-call counts, 4961 in all, are:
+= -- 675
+> -- 80
+< -- 11
++ -- 35
+- -- 19
+* -- 277
+:= -- 617
+add.period$ -- 58
+call.type$ -- 16
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 251
+empty$ -- 547
+format.name$ -- 32
+if$ -- 1347
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 0
+newline$ -- 104
+num.names$ -- 23
+pop$ -- 96
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 28
+skip$ -- 120
+stack$ -- 0
+substring$ -- 162
+swap$ -- 98
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 6
+while$ -- 25
+width$ -- 18
+write$ -- 269
+(There were 3 error messages)

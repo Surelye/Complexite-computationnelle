@@ -1,0 +1,136 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibAuthor\def\BibAuthor#1{\emph{#1}}\else\fi
+\ifx\undefined\BibTitle\def\BibTitle#1{#1}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\def\BibAnnote#1{}\else\fi
+\ifx\undefined\BibSection\def\BibSection#1#2#3{}\else\fi
+
+\bibitem{Bari_Stechkin-1956}
+\selectlanguageifdefined{russian}
+\BibAuthor{Бари,~{\relax Н. К}.} \BibTitle{Наилучшие приближения и
+  дифференциальные свойства двух сопряженных функций}~/ {\relax Н. К}.~Бари,
+  {\relax С.Б}.~Стечкин~// \emph{Труды Моск. матем. об-ва}. "---
+\newblock 1956. "---
+\newblock \CYRT.~5. "---
+\newblock {\cyr\CYRS.}~483--522.
+
+\bibitem{Bari-1955}
+\selectlanguageifdefined{russian}
+\BibAuthor{Бари,~{\relax Н. К}.} \BibTitle{О наилучшем приближении
+  тригонометрическими полиномами двух сопряженных функций}~/ {\relax Н.
+  К}.~Бари~// \emph{Изв. АН СССР. Сер. матем.} "---
+\newblock 1955. "---
+\newblock \CYRT.~19. "---
+\newblock {\cyr\CYRS.}~285--302.
+
+\bibitem{Volosivez-2007}
+\selectlanguageifdefined{russian}
+\BibAuthor{Волосивец,~{\relax С. С}.} \BibTitle{О некоторых условиях в теории
+  рядов по мультипликативным системам}~/ {\relax С. С}.~Волосивец~//
+  \emph{Analysis Math.} "---
+\newblock 2007. "---
+\newblock \CYRT.~33, {\cyr\textnumero}~3. "---
+\newblock {\cyr\CYRS.}~227--246.
+
+\bibitem{Golubov_Efimov_Skvorzov}
+\selectlanguageifdefined{russian}
+\BibAuthor{Голубов,~{\relax Б. И}.} \BibTitle{Ряды и преобразования Уолша}~/
+  {\relax Б. И}.~Голубов, {\relax А.В}.~Ефимов, {\relax В.А}.~Скворцов. "---
+\newblock Москва: Наука, 1987. "---
+\newblock 235~{\cyr\cyrs.}
+
+\bibitem{MSDN}
+\selectlanguageifdefined{english}
+\BibTitle{Создание приложения Windows Forms с помощью .NET Framework (C++),
+  [{Э}лектронный ресурс]}. "---
+\newblock
+  URL:~\url{http://msdn.microsoft.com/ru-ru/library/vstudio/ms235634(v=vs.100).aspx},
+  / (Дата обращения 01.11.2009).--- Загл. с экр.--- Яз. англ.
+  \BibUrl{http://msdn.microsoft.com/ru-ru/library/vstudio/ms235634(v=vs.100).aspx}.
+
+\bibitem{Wiki}
+\selectlanguageifdefined{english}
+\BibTitle{Википедия [{Э}лектронный ресурс] : свободная энциклопедия / текст
+  доступен по лицензии Creative Commons Attribution-ShareAlike ; Wikimedia
+  Foundation, Inc, некоммерческой организации. --- Электрон. дан. (712413
+  статей, 2479181 страниц, 117 104 загруженных файлов). - Wikipedia®, 2001-.}
+  "---
+\newblock URL:~\url{http://ru.wikipedia.org/wiki/} (дата обращения:
+  16.05.2011). --- Загл. с экрана. --- Последнее изменение страницы: 08:50, 30
+  марта 2011 года. --- Яз. рус.
+
+\bibitem{Yoffe_1993_AP_42_173}
+\selectlanguageifdefined{english}
+\BibAuthor{Yoffe,~A.~D.} \BibTitle{Low-dimensional systems: quantum size
+  effects and electronic properties of semiconductor microcrystallites
+  (zero-dimensional systems) and some quasi-two-dimensional systems}~/ A.~D.
+  Yoffe~// \emph{Adv. Phys.} "---
+\newblock 1993. "---
+\newblock Vol.~42. "---
+\newblock Pp.~173--266.
+
+\bibitem{Efros_1982_FTP_16_7_1209}
+\selectlanguageifdefined{russian}
+\BibAuthor{Эфрос,~{\relax Ал. Л }.} \BibTitle{Межзонное поглощение света в
+  полупроводниковом шаре}~/ {\relax Ал. Л }.~Эфрос, {\relax А. Л}.~Эфрос~//
+  \emph{Физика и техника полупроводников}. "---
+\newblock 1982. "---
+\newblock \CYRT.~16, {\cyr\textnumero}~7. "---
+\newblock {\cyr\CYRS.}~1209--1214.
+
+\bibitem{Anselm_1978}
+\selectlanguageifdefined{russian}
+\BibAuthor{Ансельм,~{\relax А. И}.} \BibTitle{Введение в теорию
+  полупроводников}~/ {\relax А. И}.~Ансельм. "---
+\newblock Москва: Наука, 1978. "---
+\newblock 235~{\cyr\cyrs.}
+
+\bibitem{Segall_1968}
+\selectlanguageifdefined{english}
+\BibAuthor{Segall,~B.}~// Proceedings of IXth Conference on the Physics of
+  Semiconductors, Moscow, 1968~/ Ed. by S.~M. Ryvkin. "---
+\newblock Leningrad: Nauka, 1968. "---
+\newblock P.~425.
+
+\bibitem{Agranovich_1983}
+\selectlanguageifdefined{english}
+\BibTitle{Spectroscopy and Excitation Dynamics of Condensed Molecular
+  Systems}~/ Ed. by V.~M. Agranovich, R.~M. Hochstrasser. "---
+\newblock Modern Problems in Condensed Matter Sciences. Amsterdam:
+  North-Holland, 1983.
+
+\bibitem{Mishchenko_1996}
+\selectlanguageifdefined{russian}
+\BibAuthor{Мищенко,~{\relax Е. Ж}.} \BibTitle{Неупругое рассеяние света в
+  системе взаимодействующих электронов и фоnонов}: Ph.D. thesis~/ ИТФ им.
+  Л.~Д.~Ландау. "---
+\newblock 1996.
+
+\bibitem{Skvortsov_2008}
+\selectlanguageifdefined{russian}
+\BibAuthor{Скворцов,~{\relax М. А}.} \BibTitle{Флуктуационные и
+  интерференционные эффекты в мезоскопических системах}. "---
+\newblock 2008.
+
+\bibitem{Perelman_2003_math:0307245}
+\selectlanguageifdefined{english}
+\BibAuthor{Perelman,~G.} \BibTitle{Finite extinction time for the solutions to
+  the ricci flow on certain three-manifolds}~/ G.~Perelman.
+
+\bibitem{Nielsen_2010_1006.2735}
+\selectlanguageifdefined{english}
+\BibAuthor{Nielsen,~E.} \BibTitle{A configuration interaction analysis of
+  exchange in double quantum dots}~/ E.~Nielsen, R.~P. Muller.
+
+\bibitem{matrix_87}
+\selectlanguageifdefined{russian}
+\BibAuthor{Эстербю,~{\relax О}.} \BibTitle{Прямые методы для разреженных
+  матриц}~/ {\relax О}.~Эстербю, {\relax З}.~Златев. "---
+\newblock М.: Мир, 1987. "---
+\newblock 235~{\cyr\cyrs.}
+
+\end{thebibliography}
