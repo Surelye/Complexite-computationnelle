@@ -374,32 +374,105 @@ $$ 2 \cdot \frac{\sum_{i = 1}^{n - 1} i \cdot a_i}{n^2}. $$
 
 \section{Программа решения на языке C++.}
 
+\par На основе приведённых псевдокодов реализуем алгоритм построения идеально сбалансированного
+дерева на языке программирования C++.
+
+\begin{lstlisting}[caption=Программа алгоритма построения идеально сбалансированного дерева.,
+	style=listingStyle, language=C++]
+#include <iostream>
+
+using namespace std;
+
+struct point
+{
+    int data;
+    point * left;
+    point * right;
+};
+
+point * Tree(int n, point * p)
+{
+    point * r;
+    int nl, nr;
+
+    if (n == 0) 
+    { 
+        p = NULL; 
+        return p;
+    }
+
+    nl = n / 2;
+    nr = n - nl - 1;
+    r = new point;
+
+    cin >> r->data;
+
+    r->left = Tree(nl, r->left);
+    r->right = Tree(nr, r->right);
+    p = r;
+
+    return p;
+}
+
+void Run(point * p, int level)
+{
+    if (p)
+    {
+        Run(p->left, level + 1);
+
+        for (int i = 0; i < level; i++) 
+            cout << "   ";
+
+        cout << p->data << "\n";
+        Run(p->right, level + 1);
+    }
+}
+int main()
+{
+    point * p = 0;
+    int n;
+
+    cout << "INPUT THE NUMBER OF ELEMENTS:\n";
+    cin >> n;
+
+    p = Tree(n, p);
+    Run(p, n);
+
+    return (EXIT_SUCCESS);
+}
+
+\end{lstlisting}
+
+Для демонстрации работы программы рассмотрим последовательность из 10 чисел, пусть это будут 
+первые 10 натуральных чисел.
+
+\begin{figure}[h]
+	\center{\includegraphics{prog_test/inputs.png}}
+	\caption{Входные данные программы.}
+\end{figure}
+
 \newpage
+
+Рассмотрим вывод программы:
+
+\begin{figure}[h]
+	\center{\includegraphics{prog_test/output.png}}
+	\caption{Выход программы.}
+\end{figure}
+
+Получаем визуальную структуру дерева, но растущего не вглубь, а вширь, а именно вправо. Так же 
+структура левых и правых поддеревьев отражена относительно оси $ Y $. Корнем на этом рисунке 
+является элемент 1, а элементы, находящиеся на одном уровне дерева (глубине), находятся на рисунке 
+на одном уровне отступа.
 
 \conclusion
 
+Способ построения такой структуры данных, как дерево, может быть эффективно описан с
+использованием рекурсии. Простота построения и разнообразность использования приводит нас к 
+большому числу разнообразных вариаций дерева, один из примеров которого - идеально сбалансированное
+- был рассмотрен в этой лабораторной работе.
+
+
 \newpage
-
-\begin{thebibliography}{widestlabel}
-%	%http://lectures.stargeo.ru/themes/AVL.htm#:~:text=Для%20построения%20идеально%20сбаланированного’%20дерева,п%омещаем%20элемент%20a%5BN%2F2%5D%2B1%2C%20а%20левое
-%
-\end{thebibliography}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \end{document}
