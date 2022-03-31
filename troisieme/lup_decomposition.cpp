@@ -39,7 +39,11 @@ void LUP_Decomposition (double ** A, double ** L, double ** U, int * P, int n)
 		}
 
 		if (p == 0) 
+<<<<<<< HEAD
 			cout << "\n";		
+=======
+			cout << "Единичная матрица\n";		
+>>>>>>> f1d2283f6fb03b1b345c34c8c5f193037d652703
 		else swap (P[k], P[difK]);
 		
 		for (i = 1; i <= n; i++)		
@@ -191,7 +195,11 @@ int main()
 	int * P = NULL;
 	double ** A = NULL;
 	
+<<<<<<< HEAD
 	cout << "\nВведите размерность матрицы:\n";
+=======
+	cout << "Введите размерность матрицы:\n";
+>>>>>>> f1d2283f6fb03b1b345c34c8c5f193037d652703
 	cin >> n;
 
 	L = new double * [n + 1];
@@ -222,7 +230,11 @@ int main()
 	cout << "\nОпределитель заданной вами матрицы равен: ";
 
 	convertArrayToVector (U, U_vector, n);
+<<<<<<< HEAD
 	cout << computeDet (U_vector) * computeDet (formIdentity (P, n)) << "\n\n";
+=======
+	cout << computeDet (U_vector) * computeDet (formIdentity (P, n)) << "\n";
+>>>>>>> f1d2283f6fb03b1b345c34c8c5f193037d652703
 
 	return (EXIT_SUCCESS);
 }
